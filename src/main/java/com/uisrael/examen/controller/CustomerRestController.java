@@ -50,6 +50,7 @@ public class CustomerRestController {
         if (customer.isPresent()) {
             return new ResponseEntity<>(customer.get(), HttpStatus.OK);
         } else {
+            
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         }
     }
